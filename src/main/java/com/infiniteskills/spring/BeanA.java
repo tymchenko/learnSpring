@@ -14,18 +14,16 @@ import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
 
-@Component
 public class BeanA {
-		
+
 	private BeanB beanB;
-	
-	@Autowired
-	public BeanA(BeanB beanB){
-		this.beanB=beanB;
+
+	public BeanB getBeanB() {
+		return beanB;
 	}
-	
-	public void execute(){
-		System.out.println(this.beanB.getBeanC().getMessage());
+
+	public void setBeanB(BeanB beanB) {
+		this.beanB = beanB;
 	}
-	
+
 }

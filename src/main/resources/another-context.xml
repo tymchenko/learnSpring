@@ -6,14 +6,17 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.0.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
-
-	<context:annotation-config/>
 	
-	<bean class="com.infiniteskills.spring.ApplicationConfig"/>
-	
-	<bean id="beanC" class="com.infiniteskills.spring.BeanC">
-		<property name="message" value="Java Configuration mixed with XML!"/>
+	<bean id="beanB" class="com.infiniteskills.spring.BeanB">
+		<property name="message" value="I'm specified in this another context"/>
 	</bean>
-	
+
 	
 </beans>
+
+
+
+
+
+
+	
